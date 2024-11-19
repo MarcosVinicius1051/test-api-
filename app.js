@@ -2,8 +2,8 @@ import produtosAvo from "./produtos.js";
 import express from "express";
 import cors from "cors";
 
-app.use(cors());
 const app = express();
+app.use(cors());
 
 app.get('/produtos', (req, res) => {
     res.status(200).send(produtosAvo);
