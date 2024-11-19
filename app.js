@@ -3,7 +3,7 @@ import express from "express";
 // import cors from "cors";
 
 // app.use(cors());
-// const app = express();
+const app = express();
 
 app.get('/produtos', (req, res) => {
     res.status(200).send(produtosAvo);
